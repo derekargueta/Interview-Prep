@@ -37,8 +37,24 @@ public class Sorts {
      *
      */
     public static int[] insertionSort(int[] list) {
+        // iterate through all elements of the array
+        for(int i = 0; i < list.length; i++) {
 
-        return null;
+            int element = list[i];
+
+            // find where they belong going right to left by iterating as long as the element is smaller
+            int j;
+            for(j = i; j > 0 && list[j] > element; j--) {
+
+                // shift items to the right
+                list[j] = list[j - 1];
+            }
+
+            // place the element where it finally belongs <3
+            list[j] = element;
+        }
+        
+        return list;
     }
 
     public static int[] selectionSort(int[] list) {

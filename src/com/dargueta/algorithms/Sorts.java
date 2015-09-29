@@ -57,6 +57,12 @@ public class Sorts {
         return list;
     }
 
+    /**
+     *
+     * SPACE: O(1)
+     * TIME : O(n^2) worst-case
+     * IMPORTANT: non-adaptive. best for when swaps are expensive and you need as few as possible
+     */
     public static int[] selectionSort(int[] list) {
 
         for(int i = 0; i < list.length-1; i++) {

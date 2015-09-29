@@ -53,13 +53,32 @@ public class Sorts {
             // place the element where it finally belongs <3
             list[j] = element;
         }
-        
+
         return list;
     }
 
     public static int[] selectionSort(int[] list) {
 
-        return null;
+        for(int i = 0; i < list.length-1; i++) {
+            int smallestVal = list[i];
+            int smallestIndex = i;
+
+            // iterate through the remainder of the list to find the next smallest value
+            for(int j = i + 1; j < list.length; j++) {
+                if(i != j && list[j] < smallestVal) {
+                    // update smallest
+                    smallestIndex = j;
+                    smallestVal = list[j];
+                }
+            }
+
+            // swap to bring the small value up front and in position
+            int cup = list[i];
+            list[i] = smallestVal;
+            list[smallestIndex] = cup;
+        }
+
+        return list;
     }
 
     /**

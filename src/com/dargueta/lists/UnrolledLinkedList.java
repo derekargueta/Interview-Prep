@@ -1,5 +1,7 @@
 package com.dargueta.lists;
 
+import java.util.Arrays;
+
 /**
  * Created by derek on 11/16/15.
  *
@@ -34,6 +36,9 @@ public class UnrolledLinkedList {
     }
 
     public void insert(int[] arr) {
+        // empty nodes don't add any value to the list, just complexity
+        if(arr.length == 0) return;
+
         if(this.head == null) {
             this.head = new ULLNode(null, arr);
         } else {
@@ -71,16 +76,63 @@ public class UnrolledLinkedList {
             return;
         }
 
-        ULLNode tmp = this.head;
-        while(index >= tmp.getArr().length) {
-            index -= tmp.getArr().length;
-            tmp = tmp.getNext();
-        }
+        if(index < this.head.getArr().length) {
+            int[] arr = this.head.getArr();
+            int[] newArr = new int[arr.length-1];
+            int j = 0;
+            for(int i = 0; i < arr.length; i++) {
+                if(i == index) continue;
 
+                newArr[j++] = arr[i];
+            }
+            this.head.setArr(newArr);
+        } else {
+
+            ULLNode tmp = this.head;
+            index -= tmp.getArr().length;
+            while (index >= tmp.getNext().getArr().length) {
+                index -= tmp.getNext().getArr().length;
+                tmp = tmp.getNext();
+            }
+
+            // looks like element is in current node?
+
+            if (tmp.getNext().getArr().length == 1) {
+                // the element we are looking for is the only one in the node, so just remove the node
+                tmp.setNext(tmp.getNext().getNext());
+            } else {
+                // need to set a new array in the node without the element AKA "deleting" it
+                int[] arr = tmp.getNext().getArr();
+                int[] newArr = new int[arr.length - 1];
+                int j = 0;
+                for (int i = 0; i < arr.length; i++) {
+                    if (i == index) continue;
+                    newArr[j++] = arr[i];
+                }
+                tmp.getNext().setArr(newArr);
+            }
+        }
+        this.size--;
     }
 
     public int getSize() {
         return size;
+    }
+
+    @Override
+    public String toString() {
+
+        if(this.head == null) {
+            return "{}";
+        }
+
+        StringBuilder sb = new StringBuilder("{");
+        ULLNode tmp = this.head;
+        while(tmp.getNext() != null) {
+            sb.append(tmp.toString()).append(", ");
+            tmp = tmp.getNext();
+        }
+        return sb.append(tmp.toString()).append("}").toString();
     }
 }
 
@@ -103,5 +155,14 @@ class ULLNode {
 
     public int[] getArr() {
         return this.arr;
+    }
+
+    public void setArr(int[] newArr) {
+        this.arr = newArr;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(this.arr);
     }
 }

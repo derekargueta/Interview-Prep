@@ -82,13 +82,17 @@ public class LinkedList {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(head.toString());
+        if(this.head == null) {
+            return "[]";
+        }
+
+        StringBuilder sb = new StringBuilder("[").append(head.toString());
         LLNode tmp = head;
         while(tmp.getNext() != null) {
             tmp = tmp.getNext();
             sb.append(", ").append(tmp.toString());
         }
-        return sb.toString();
+        return sb.append("]").toString();
     }
 }
 

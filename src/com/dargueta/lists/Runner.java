@@ -24,26 +24,32 @@ public class Runner {
         System.out.println("----- Running LinkedList Tests -----");
         LinkedList ll = new LinkedList();
         if(ll.getCount() != 0) System.err.println("LinkedList should be empty");
+        System.out.println(ll);
 
         ll.insert(1);
         if(ll.getCount() != 1) System.err.println("LinkedList should have one element");
         if(ll.get(0).getVal() != 1) System.err.println("First node should be 1");
+        System.out.println(ll);
 
         ll.insert(5);
         if(ll.getCount() != 2) System.err.println("LinkedList should have two elements");
         if(ll.get(1).getVal() != 5) System.err.println("Second node should be 5");
+        System.out.println(ll);
 
         ll.insert(9);
         if(ll.getCount() != 3) System.err.println("LinkedList should have three elements");
         if(ll.get(2).getVal() != 9) System.err.println("Third node should be 9");
+        System.out.println(ll);
 
         ll.delete(5);
         if(ll.getCount() != 2) System.err.println("LinkedList should have two elements");
         if(ll.get(1).getVal() != 9) System.err.println("Second node should be 9");
+        System.out.println(ll);
 
         ll.insert(15);
         if(ll.getCount() != 3) System.err.println("LinkedList should have three elements");
         if(ll.get(2).getVal() != 15) System.err.println("Third node should be 15");
+        System.out.println(ll);
 
 //        if(ll.get(-10).getVal() != -1) System.err.println("Should return -1");
 //        if(ll.get(1000).getVal() != -1) System.err.println("Should return -1");
@@ -56,23 +62,58 @@ public class Runner {
         System.out.println("----- Running UnrolledLinkedList Tests -----");
         UnrolledLinkedList ull = new UnrolledLinkedList();
         if(ull.getSize() != 0) System.err.println("UnrolledLinkedList should be empty");
+        System.out.println(ull);
 
         ull.insert(new int[]{1, 2});
         if(ull.getSize() != 2) System.err.println("UnrolledLinkedList should have two elements");
         if(ull.getAt(0) != 1) System.err.println("0th element should be 1");
         if(ull.getAt(1) != 2) System.err.println("1st element should be 2");
+        System.out.println(ull);
 
         ull.insert(new int[]{3});
         if(ull.getSize() != 3) System.err.println("UnrolledLinkedList should have three elements");
         if(ull.getAt(0) != 1) System.err.println("0th element should be 1");
         if(ull.getAt(1) != 2) System.err.println("1st element should be 2");
         if(ull.getAt(2) != 3) System.err.println("2nd element should be 3");
+        System.out.println(ull);
 
         ull.insert(new int[]{});
         if(ull.getSize() != 3) System.err.println("UnrolledLinkedList should have three elements");
         if(ull.getAt(0) != 1) System.err.println("0th element should be 1");
         if(ull.getAt(1) != 2) System.err.println("1st element should be 2");
         if(ull.getAt(2) != 3) System.err.println("2nd element should be 3");
+        System.out.println(ull);
+
+        ull.deleteAt(0);
+        if(ull.getSize() != 2) System.err.println("UnrolledLinkedList should have two elements");
+        if(ull.getAt(0) != 2) System.err.println("1st element should be 2, instead is " + ull.getAt(0));
+        if(ull.getAt(1) != 3) System.err.println("2nd element should be 3, instead is " + ull.getAt(1));
+        System.out.println(ull);
+
+        ull.insert(new int[]{5, 6, 7});
+        if(ull.getSize() != 5) System.err.println("UnrolledLinkedList should have five elements");
+        if(ull.getAt(0) != 2) System.err.println("0th element should be 2");
+        if(ull.getAt(1) != 3) System.err.println("1st element should be 3");
+        if(ull.getAt(2) != 5) System.err.println("2nd element should be 5");
+        if(ull.getAt(3) != 6) System.err.println("3rd element should be 6");
+        if(ull.getAt(4) != 7) System.err.println("4th element should be 7");
+        System.out.println(ull);
+
+        ull.deleteAt(1);
+        if(ull.getSize() != 4) System.err.println("UnrolledLinkedList should have four elements");
+        if(ull.getAt(0) != 2) System.err.println("0th element should be 2");
+        if(ull.getAt(1) != 5) System.err.println("1st element should be 5, instead is " + ull.getAt(1));
+        if(ull.getAt(2) != 6) System.err.println("2nd element should be 6, instead is " + ull.getAt(2));
+        if(ull.getAt(3) != 7) System.err.println("3rd element should be 7, instead is " + ull.getAt(3));
+        System.out.println(ull);
+
+        ull.deleteAt(3);
+        if(ull.getSize() != 3) System.err.println("UnrolledLinkedList should have three elements, instead has " + ull.getSize());
+        if(ull.getAt(0) != 2) System.err.println("0th element should be 2, instead is" + ull.getAt(0));
+        if(ull.getAt(1) != 5) System.err.println("1st element should be 5, instead is " + ull.getAt(1));
+        if(ull.getAt(2) != 6) System.err.println("2nd element should be 6, instead is " + ull.getAt(2));
+        System.out.println(ull);
+
         System.out.flush();
         System.err.flush();
     }

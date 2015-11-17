@@ -6,11 +6,11 @@ package com.dargueta.lists;
 public class DoubleLinkedList {
 
     private DLLNode head;
-    private int count;
+    private int size;
 
     public DoubleLinkedList() {
         this.head = null;
-        this.count = 0;
+        this.size = 0;
     }
 
     public void insert(int val) {
@@ -25,6 +25,11 @@ public class DoubleLinkedList {
 
             tmp.setNext(val);
         }
+        this.size++;
+    }
+
+    public int getSize() {
+        return size;
     }
 
     @Override

@@ -34,12 +34,49 @@ public class UnrolledLinkedList {
     }
 
     public void insert(int[] arr) {
-        // TODO
+        if(this.head == null) {
+            this.head = new ULLNode(null, arr);
+        } else {
+            // TODO
+            ULLNode tmp = this.head;
+
+            // get to the end of the list
+            while(tmp.getNext() != null) {
+                tmp = tmp.getNext();
+            }
+
+            tmp.setNext(new ULLNode(null, arr));
+        }
+
+        this.size += arr.length;
     }
 
-    public ULLNode getAt(int index) {
+    public int getAt(int index) {
+        if(index < 0 || index > this.size) {
+            return -1;
+        }
+
+        ULLNode tmp = this.head;
+        while(index >= tmp.getArr().length) {
+            index -= tmp.getArr().length;
+            tmp = tmp.getNext();
+        }
+
+        return tmp.getArr()[index];
+    }
+
+    public void deleteAt(int index) {
         // TODO
-        return null;
+        if(index < 0 || index > this.size) {
+            return;
+        }
+
+        ULLNode tmp = this.head;
+        while(index >= tmp.getArr().length) {
+            index -= tmp.getArr().length;
+            tmp = tmp.getNext();
+        }
+
     }
 
     public int getSize() {
@@ -58,6 +95,10 @@ class ULLNode {
 
     public ULLNode getNext() {
         return this.next;
+    }
+
+    public void setNext(ULLNode n) {
+        this.next = n;
     }
 
     public int[] getArr() {

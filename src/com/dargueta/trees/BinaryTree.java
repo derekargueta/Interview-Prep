@@ -36,12 +36,13 @@ public class BinaryTree<T extends Comparable<T>> {
         return false;
     }
 
-    public void insert(T t) {
+    public boolean insert(T t) {
         if(this.root == null) {
             this.root = new BNode<T>(t);
-        } else {
-            innerInsert(t, this.root);
+            return true;
         }
+
+        return innerInsert(t, this.root);
     }
 }
 

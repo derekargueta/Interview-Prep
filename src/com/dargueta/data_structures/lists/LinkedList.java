@@ -2,6 +2,24 @@ package com.dargueta.data_structures.lists;
 
 /**
  * Created by derek on 9/14/15.
+ *
+ * A Linked List is a collection data structure consisting of a series of nodes, where each node points to the next
+ * node. Looking something like:
+ *
+ * ["bob"] -> ["tim"] -> ["john"] -> ["jake"]
+ *
+ * As opposed to an array which would look like:
+ * ["bob"]["tim"]["john"]["jake"]
+ * where each element is accessible by index value.
+ *
+ * Since a Linked List does not have indexes, merely pointers on each node, to access a node at "index" 3 (0-based),
+ * you would have to iterate down the list, starting at the head node, or also called the root, 4 times until you
+ * get to index 3. Therefore, Linked List access is considered O(n) time where n is the index, while an array has
+ * O(1) access time.
+ *
+ * A Linked List has a much more flexible structure than an array, as to insert a new node, you simply need to adjust
+ * the pointers. Whereas to insert an element into an array, you'd need to copy down length-index elements down one
+ * spot to create a vacancy for the new element.
  */
 public class LinkedList {
 

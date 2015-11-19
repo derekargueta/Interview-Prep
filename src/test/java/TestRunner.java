@@ -13,7 +13,8 @@ public class TestRunner {
         for(Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
-        System.out.println(result.wasSuccessful());
+        System.out.println(result.wasSuccessful() ? "All tests passed" : result.getFailureCount() + " tests failed");
+        System.out.println(result.getIgnoreCount() + " tests were ignored");
         System.out.println("Ran " + result.getRunCount() + " test in " + (result.getRunTime() / 1000.0) + " seconds");
     }
 }

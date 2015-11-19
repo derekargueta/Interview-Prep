@@ -117,7 +117,7 @@ public class Sorts {
     }
 
     private static int[] quicksortHelper(int[] list, int low, int high) {
-        if(high - low < 2) return list;
+        if(high - low < 1) return list;
 
         int pivot = list[low + (high - low) / 2];
         int left = low;
@@ -160,7 +160,7 @@ public class Sorts {
     }
 
     public static int[] quick3Sort(int[] list) {
-
+        // -- TODO
         return null;
     }
 }

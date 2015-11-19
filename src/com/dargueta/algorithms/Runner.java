@@ -17,9 +17,6 @@ public class Runner {
 
     public static void main(String[] args) {
         int[] dummylist = generateRandomList();
-        System.out.println("Generated list");
-        System.out.println("Bubble sort:    " + Arrays.toString(Sorts.bubbleSort(dummylist)));
-        System.out.println("Quick sort:     " + Arrays.toString(Sorts.quickSort(dummylist)));
         System.out.println("Insertion sort: " + Arrays.toString(Sorts.insertionSort(dummylist)));
         System.out.println("Selection sort: " + Arrays.toString(Sorts.selectionSort(dummylist)));
     }

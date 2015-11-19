@@ -33,9 +33,18 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
 ### DO YOUR HOMEWORK - Know the company you're interviewing with!
 ###### Even if you fumble on the technical question, you can gain some redemption with interviewers by asking *very* insightful questions about the engineering problems they are tackling and prodding about how they are scaling their product. I don't mean "So what language do you guys use?". More like "How did you overcome challenge X when developing service Y?".
 
+- Digital Ocean
+    - [Digital Ocean on StackShare](http://stackshare.io/digitalocean/digitalocean)
+- Dropbox
+    - [Dropbox on StackShare](http://stackshare.io/dropbox/dropbox)
+- Duo Security
+    - [Duo Security on StackShare](http://stackshare.io/duo-security/duo-security)
 - Facebook (and associated products)
     - [Facebook Engineering Blog](https://code.facebook.com/)
     - [Instagram Engineering Blog](http://instagram-engineering.tumblr.com/)
+    - [Facebook on StackShare](http://stackshare.io/facebook/facebook)
+- Github
+    - [Github on StackShare](http://stackshare.io/github/github)
 - Google (and associated products)
     - [Google Developers Blog](http://googledevelopers.blogspot.com/)
     - [Google Engineering Tools Blog](http://google-engtools.blogspot.com/)
@@ -43,17 +52,31 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
     - [Google Testing Blog](http://googletesting.blogspot.com/)
     - [Google Cloud Platform Blog](http://googlecloudplatform.blogspot.com/)
     - [YouTube Engineering Blog](http://youtube-eng.blogspot.com/)
+- Intuit
+    - [Intuit on StackShare](http://stackshare.io/intuit/intuit)
+- Khan Academy
+    - [Khan Academy on StackShare](http://stackshare.io/khan-academy/khan-academy)
 - LinkedIn
     - [LinkedIn Blog](http://blog.linkedin.com/)
     - [LinkedIn Engineering](https://engineering.linkedin.com/)
+    - [LinkedIn on StackShare](http://stackshare.io/linkedin/linkedin)
+- Lyft
+    - [Lyft on StackShare](http://stackshare.io/lyft/lyft)
+- Netflix
+    - [Netflix on StackShare](http://stackshare.io/netflix/netflix)
 - Pinterest
     - [Pinterest Blog](https://blog.pinterest.com/en)
     - [Pinterest Engineering Blog](https://engineering.pinterest.com/)
     - [Pinterest on StackShare](http://stackshare.io/pinterest/pinterest)
     - [Scaling Pinterest](http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html)
+- Shopify
+    - [Shopify on StackShare](http://stackshare.io/shopify/shopify)
 - Twitter
     - [Twitter Engineering Blog](https://blog.twitter.com/engineering)
+    - [Twitter on StackShare](http://stackshare.io/twitter/twitter)
 - Uber
     - [Uber Engineering Blog](https://eng.uber.com/)
+    - [Uber on StackShare](http://stackshare.io/uber/uber)
 - Yelp
     - [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
+    - [Yelp on StackShare](http://stackshare.io/yelp/yelp)

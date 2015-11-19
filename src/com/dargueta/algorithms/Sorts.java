@@ -42,7 +42,7 @@ public class Sorts {
 
             // find where they belong going right to left by iterating as long as the element is smaller
             int j;
-            for(j = i; j > 0 && list[j] > element; j--) {
+            for(j = i; j > 0 && list[j - 1] > element; j--) {
 
                 // shift items to the right
                 list[j] = list[j - 1];

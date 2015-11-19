@@ -1,4 +1,4 @@
-package com.dargueta.lists;
+package com.dargueta.data_structures.lists;
 
 /**
  * Created by derek on 9/14/15.

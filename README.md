@@ -45,6 +45,15 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
 - [Elements of Programming Interviews: The Insider's Guide](http://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836/)
 
 
+### Helpful Cheat Sheets
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+- [Python 2.7 Cheat Sheet](http://www.astro.up.pt/~sousasag/Python_For_Astronomers/Python_qr.pdf)
+- [Technical Interview Cheat Sheet](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)
+- [JavaScript Cheat Sheet](http://overapi.com/javascript/)
+- [Java Cheat Sheet](http://overapi.com/java/)
+- [Ruby Cheat Sheet](http://overapi.com/ruby/)
+
+
 ### DO YOUR HOMEWORK - Know the company you're interviewing with!
 ###### Even if you fumble on the technical question, you can gain some redemption with interviewers by asking *very* insightful questions about the engineering problems they are tackling and prodding about how they are scaling their product. I don't mean "So what language do you guys use?". More like "How did you overcome challenge X when developing service Y?".
 

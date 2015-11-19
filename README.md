@@ -9,7 +9,7 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
     - Linked Lists
     - Graphs & Tree variants
     - Stacks & Queues
-- <b>Algorithms</b>
+- <b>Algorithms</b> - DON'T memorize code. Memorize the concepts.
     - Sorts
         - Quick Sort
         - Insertion Sort

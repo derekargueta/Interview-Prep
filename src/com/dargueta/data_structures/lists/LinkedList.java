@@ -79,7 +79,7 @@ public class LinkedList {
         count--;
     }
 
-    public LLNode get(int index) {
+    public int get(int index) {
         if(index >= count || index < 0) {
             // TODO - make custom exception class
             throw new ArrayIndexOutOfBoundsException();
@@ -91,7 +91,7 @@ public class LinkedList {
             index--;
         }
 
-        return tmp;
+        return tmp.getVal();
     }
 
     public int getCount() {

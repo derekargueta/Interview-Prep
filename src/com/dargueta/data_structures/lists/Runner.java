@@ -21,44 +21,6 @@ public class Runner {
 
 
         // -- Linked List Tests --
-        System.out.println("----- Running LinkedList Tests -----");
-        LinkedList ll = new LinkedList();
-        if(ll.getCount() != 0) System.err.println("LinkedList should be empty");
-        System.out.println(ll);
-
-        ll.insert(1);
-        if(ll.getCount() != 1) System.err.println("LinkedList should have one element");
-        if(ll.get(0).getVal() != 1) System.err.println("First node should be 1");
-        System.out.println(ll);
-
-        ll.insert(5);
-        if(ll.getCount() != 2) System.err.println("LinkedList should have two elements");
-        if(ll.get(1).getVal() != 5) System.err.println("Second node should be 5");
-        System.out.println(ll);
-
-        ll.insert(9);
-        if(ll.getCount() != 3) System.err.println("LinkedList should have three elements");
-        if(ll.get(2).getVal() != 9) System.err.println("Third node should be 9");
-        System.out.println(ll);
-
-        ll.delete(5);
-        if(ll.getCount() != 2) System.err.println("LinkedList should have two elements");
-        if(ll.get(1).getVal() != 9) System.err.println("Second node should be 9");
-        System.out.println(ll);
-
-        ll.insert(15);
-        if(ll.getCount() != 3) System.err.println("LinkedList should have three elements");
-        if(ll.get(2).getVal() != 15) System.err.println("Third node should be 15");
-        System.out.println(ll);
-
-//        if(ll.get(-10).getVal() != -1) System.err.println("Should return -1");
-//        if(ll.get(1000).getVal() != -1) System.err.println("Should return -1");
-        System.out.flush();
-        System.err.flush();
-
-
-
-        // -- Linked List Tests --
         System.out.println("----- Running UnrolledLinkedList Tests -----");
         UnrolledLinkedList ull = new UnrolledLinkedList();
         if(ull.getSize() != 0) System.err.println("UnrolledLinkedList should be empty");

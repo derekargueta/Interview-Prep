@@ -2,13 +2,28 @@ Before you can even interview, you must first get the opportunity. To prep your 
 companies, first check out [this awesome guide](https://github.com/cassidoo/getting-a-gig) by
 [Cassidy Williams](http://www.cassidoo.co/) of [Hackathon Hackers](https://www.facebook.com/groups/hackathonhackers/).
 
-### Topics to review:
+### Things you should know:
+- <b>Data Structures</b> - Know how to use them and how to build them from scratch
+    - Arrays
+    - Hash Maps
+    - Linked Lists
+    - Graphs & Tree variants
+    - Stacks & Queues
+- <b>Algorithms</b>
+    - Sorts
+        - Quick Sort
+        - Insertion Sort
+        - Selection Sort
+    - Searches
+        - Binary Search (for ordered collections)
+        - Depth-First Search (graphs)
+        - Breadth-First Search (graphs)
+- Dynamic Programming (AKA memoization)
+- Recursion
+- Bit-Manipulation
+- Object-Oriented Programming
+- System Design
 - Scalability
-- Tries
-- Algorithm complexities
-- Database Design
-- Graphs & Dijkstra's algo
-- Dynamic Programming
 
 
 ### Websites to practice interview questions:

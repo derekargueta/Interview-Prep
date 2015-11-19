@@ -1,6 +1,5 @@
 package com.dargueta.algorithms;
 
-import java.util.Arrays;
 
 /**
  * Created by derek on 9/14/15.
@@ -14,9 +13,8 @@ public class Sorts {
      *
      */
     public static int[] bubbleSort(int[] list) {
-
         for(int x = 0; x < list.length - 1; x++) {
-            for(int y = 0; y < list.length - x; y++) {
+            for(int y = 0; y < list.length - x - 1; y++) {
                 if(list[y] > list [y+1]) {
                     // swap
                     int tmp = list[y];

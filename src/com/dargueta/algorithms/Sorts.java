@@ -33,6 +33,18 @@ public class Sorts {
      * TIME : O(n^2) worst-case
      * BEST SCENARIOS: nearly sorted (b/c O(n) time) or small problem set (b/c low memory overhead)
      *
+     * What this looks like:
+     * Step 1 - i = 0: [4, 8, 1, 0] Change nothing since j > 0 (see algo below for `j`)
+     * Step 2 - i = 1: [4, 8, 1, 0] 8 > 4, continue
+     * Step 3 - i = 2: [4, 8, 1, 0] 1 < 8 so we go to inner loop
+     *                 [4, 8, 8, 0] "slide" 8 to the right (one iteration of inner loop)
+     *                 [4, 4, 8, 0] "slide" 4 to the right (one iteration of inner loop)
+     *                 [1, 4, 8, 0] place 1
+     * Step 4 - i = 3: [1, 4, 8, 0] 0 < 8 so same thing as step 3
+     *                 [1, 4, 8, 8] "slide" 8 to the right
+     *                 [1, 4, 4, 8] "slide" 4 to the right
+     *                 [1, 1, 4, 8] "slide" 1 to the right
+     *                 [0, 1, 4, 8] place 0
      */
     public static int[] insertionSort(int[] list) {
         // iterate through all elements of the array
@@ -40,15 +52,19 @@ public class Sorts {
 
             int element = list[i];
 
-            // find where they belong going right to left by iterating as long as the element is smaller
-            int j;
-            for(j = i; j > 0 && list[j - 1] > element; j--) {
+            // find where they belong going right to left by iterating as long as this element is smaller than its
+            // neighbor
+            int j = i;
+            while(j > 0 && list[j-1] > element) {
 
-                // shift items to the right
+                // shift items left-to-right
                 list[j] = list[j - 1];
+                j--;
             }
 
             // place the element where it finally belongs <3
+            // It's ok to place the element here since list[j] will be a duplicate value of what was at list[j-1]
+            // (see explanation above)
             list[j] = element;
         }
 

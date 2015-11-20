@@ -116,6 +116,8 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
 - Shopify
     - [Shopify on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Shopify-EI_IE675933.11,18.htm)
     - [Shopify on StackShare](http://stackshare.io/shopify/shopify)
+- Snapchat
+    - [A brief History of Snapchat - TechCrunch](http://techcrunch.com/gallery/a-brief-history-of-snapchat/)
 - Twitter
     - [Twitter Engineering Blog](https://blog.twitter.com/engineering)
     - [Twitter on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Twitter-EI_IE100569.11,18.htm)

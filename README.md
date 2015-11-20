@@ -99,6 +99,9 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
     - [LinkedIn on Glassdoor](http://www.glassdoor.com/Overview/Working-at-LinkedIn-EI_IE34865.11,19.htm)
     - [LinkedIn on StackShare](http://stackshare.io/linkedin/linkedin)
 - Lyft
+    - ["What technology does Lyft use?" on Quora](https://www.quora.com/What-technology-does-Lyft-use)
+    - [Lyft blog](http://blog.lyft.com/)
+    - [Developer Story: Lyft](http://www.developereconomics.com/developer-story-lyft/)
     - [Lyft on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Lyft-EI_IE700614.11,15.htm)
     - [Lyft on StackShare](http://stackshare.io/lyft/lyft)
 - Netflix

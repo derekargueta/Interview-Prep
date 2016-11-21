@@ -105,6 +105,8 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
     - [Lyft on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Lyft-EI_IE700614.11,15.htm)
     - [Lyft on StackShare](http://stackshare.io/lyft/lyft)
 - Netflix
+    - [Netflix Engineering Blog](http://techblog.netflix.com/)
+    - [Netflix on Github](https://github.com/netflix)
     - [Netflix on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Netflix-EI_IE11891.11,18.htm)
     - [Netflix on StackShare](http://stackshare.io/netflix/netflix)
 - Pinterest

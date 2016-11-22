@@ -112,6 +112,9 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
     - [Developer Story: Lyft](http://www.developereconomics.com/developer-story-lyft/)
     - [Lyft on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Lyft-EI_IE700614.11,15.htm)
     - [Lyft on StackShare](http://stackshare.io/lyft/lyft)
+- Microsoft
+    - [Microsoft Engineering Blog](https://engineering.microsoft.com/)
+    - [Microsoft on Github](https://github.com/microsoft)
 - Netflix
     - [Netflix Engineering Blog](http://techblog.netflix.com/)
     - [Netflix on Github](https://github.com/netflix)
@@ -124,12 +127,20 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
     - [Pinterest on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm)
     - [Pinterest on StackShare](http://stackshare.io/pinterest/pinterest)
     - [Scaling Pinterest](http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html)
+- Riot Games
+    - [Riot Games Careers](http://www.riotgames.com/careers)
+    - [Riot Games Engineering Blog](https://engineering.riotgames.com/)
+    - [Riot Games on Github](https://github.com/riotgames)
+    - [Riot Games on GlassDoor](https://www.glassdoor.com/Overview/Working-at-Riot-Games-EI_IE247538.11,21.htm)
 - Shopify
     - [Shopify on Github](https://github.com/shopify)
     - [Shopify on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Shopify-EI_IE675933.11,18.htm)
     - [Shopify on StackShare](http://stackshare.io/shopify/shopify)
 - Snapchat
     - [A brief History of Snapchat - TechCrunch](http://techcrunch.com/gallery/a-brief-history-of-snapchat/)
+- Spotify
+    - [Spotify Engineering Blog](https://labs.spotify.com/)
+    - [Spotify on Github](https://github.com/spotify)
 - Twitter
     - [Twitter Engineering Blog](https://blog.twitter.com/engineering)
     - [Twitter on Github](https://github.com/twitter)
